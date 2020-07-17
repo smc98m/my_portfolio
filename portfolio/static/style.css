@@ -1,0 +1,239 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* The following CSS are in the header block */
+.bg-image {
+    background-image: URL("code.png");
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    text-align: center;
+    height: 3em;
+    background-color: transparent;
+}
+
+/* This is the header color changing on scroll. Refer to JavaScript for code */
+.header.active {
+    background-color: black; 
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.50);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.50);
+    transition: all 0.2s ease-in-out;
+}
+
+.header a {
+    color: cornsilk;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+    .header a:hover {
+        color: red;
+    }
+
+#header_links {
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0 0 0;
+    white-space: nowrap;
+}
+
+#header_links li {
+    display: inline;
+}
+
+#about_link {
+    margin-right: 60px;
+}
+
+#project_link {
+    margin-right: 60px;
+}
+
+#connect_link {
+    margin-right: 60px;
+}
+
+/* The following CSS is in the intro_wrap div */
+
+.intro_wrap {
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 100%;
+}
+
+#my_name {
+    color: cornsilk;
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 100px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: .10em;
+    white-space: nowrap;
+}
+
+.web_dev h1 {
+    color: rgb(54, 164, 207);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 55px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation:
+        typing 5s steps(100, end);
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The following CSS is code for the About Me section (Professional Resume) */
+#about_wrap {
+    text-align: center;
+    background-color: rgb(54, 164, 207);
+    padding-top: 100px;
+    min-height: 50em;
+}
+
+    #about_wrap h1 {
+        margin-bottom: 50px;
+    }
+
+#my_pic {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 15em;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.text-block {
+    width: 60%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.text-block p {
+    font-size: 16px;
+}
+
+#project_wrap {
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    padding-top: 100px;
+    min-height: 35em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project_icons {
+    padding-top: 50px;
+}
+
+#project_wrap h1 {
+    color: cornsilk;
+}
+
+#boredom_busters img {
+    width: 35%;
+    height: auto;
+    padding: 3px;
+    border: 1px solid white;
+}
+
+#boredom_busters:hover img {
+    border: 8px dotted rgb(54, 164, 207);
+}
+
+#stadium_chasers img {
+    width: 35%;
+    height: auto;
+    padding: 3px;
+    border: 1px solid white;
+}
+
+#stadium_chasers:hover img {
+    border: 8px dotted rgb(54, 164, 207);
+}
+
+#project_wrap h2 {
+    padding-top: 20px;
+}
+
+#connect_wrap {
+    background-color: rgb(54, 164, 207);
+    text-align: center;
+}
+
+.connect_icons li {
+    display: inline-block;
+    padding: 20px 40px 60px 40px;
+    vertical-align: middle;
+}
+
+.connect_icons a {
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+}
+
+#connect_wrap h1 {
+    margin-bottom: 20px;
+    padding-top: 65px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}

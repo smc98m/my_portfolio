@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">    
+    <script src="{% static 'script.js' %}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<body>
+    <div class="bg-image"></div>
+        <div class="header">
+            <ul id="header_links">
+                <li><a id="about_link" href="#about_wrap">About</a></li>
+                <li><a id="project_link" href="#project_wrap">Projects</a></li>
+                <li><a id="connect_link" href="#connect_wrap">Connect</a></li>
+                <li><a id="resume" href="/static/Resume.pdf" target="blank">Resume</a></li>
+            </ul>
+        </div>
+    <div class="intro_wrap">
+        <h1 id="my_name">Steve Cates</h1>
+        <div class="web_dev">
+            <h1>Full Stack Developer</h1>
+        </div>    
+    </div>
+    <div id="about_wrap">
+        <h1>Hello, my name is Steve!</h1>
+        <div id="my_pic_div">
+            <img id="my_pic" src="/static/IMG_4252.jpg" alt="Me">
+        </div>
+        <div class="text-block">
+            <p>Paths... two colleges, two cities, two jobs, two directions.  We have all experienced decision points that ask us to choose a path. Sometimes, folks look back and regret the path but more often than not, they take the good memories, the positive relationships, and the learned lessons and apply that to the next path. Conversely, that next path is typically similar but with a different facade as familiarity is something most of us take comfort in. Sometimes, though, it’s a change of course. The latter is the case for me. After college, my path included a successful career in human resources where I spent many years administering various human resources activities and programs. Through a typical progression from analyst roles to supervisory roles and finally to a manager role over both functional areas and people, I obtained and then honed in on skills such as project management, budget forecasting and planning, understanding the big picture of a client’s needs  and when to push for something and when to let it go.</p><br>
+
+            <p>Then came the change of course. My favorite part of work had been working on the HR side of system integrations and software implementations with IT folks. Minimizing duplicate processes, creating efficiencies in workflow and forms were things that I looked forward to more than the traditional HR activities of administering recruitment and performance management strategies.. So crossing over to the IT side was my next path. I have now acquired technical software skills and am eager to create solutions through technology. Grateful to have spent the last several months at a coding boot camp, I am ready to enter this field of work full-time.<br><br> 
+
+            I too, take comfort in the familiar so taking this unknown path was not without trepidation but I am confident this was the best path so here’s to each of us taking a path yet to be discovered at some point in our lives.</p>
+        </div>
+    </div>
+    <div id="project_wrap">
+        <h1>Projects</h1>
+        <div id="project_icons">
+            <a id="boredom_busters" href="https://github.com/smc98m/Boredum_Busters_Board"><img alt="Boredom Busters" src="/static/Boredom_Busters.png"></a>
+            <a id="stadium_chasers" href="https://github.com/theklbarnett/stadium_chasers"><img alt="Stadium Chasers" src="/static/Stadium_Chasers.png"></a>
+        </div>
+        <h2>Additional projects coming soon.</h2>
+    </div>
+    <div id="connect_wrap">
+        <h1>Let's Connect!</h1>
+        <div class="connect_icons">
+            <ul>
+                <li><a href="https://linkedin.com/in/stevencates02"><img src="/static/LinkedIn.png" alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/smc98m"><img src="/static/GitHub.png" alt="GitHub"></a></li>
+                <li><a href="mailto:stevecates78@gmail.com"><img src="/static/email.png" alt="Email"></a></li>
+            </ul>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</body>
+</html>
