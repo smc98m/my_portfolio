@@ -123,13 +123,18 @@ body, html {
 
 /* The following CSS is code for the About Me section (Professional Resume) */
 #about_wrap {
+    background-image: url('path2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
-    background-color: rgb(54, 164, 207);
-    padding-top: 100px;
     min-height: 50em;
+    background-color: rgb(54, 164, 207);
+    width: 100%;
+    z-index: 0;
 }
 
     #about_wrap h1 {
+        padding-top: 100px;
         margin-bottom: 50px;
     }
 
@@ -137,28 +142,31 @@ body, html {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 15em;
-    border-radius: 50%;
-    z-index: 0;
+    max-height: 10em;
+    border-radius: 5%;
+    z-index: 1;
 }
 
 .text-block {
-    width: 60%;
+    width: 70%;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: rgba(92, 92, 92, 0.719);
     padding: 20px;
-    border: 3px solid black;
 }
 
 .text-block p {
-    font-size: 16px;
+    font-size: 22px;
+    color: white;
+    text-align: justify;
+    font-family: Calibri;
+
 }
 
 #project_wrap {
     background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
     padding-top: 100px;
-    min-height: 35em;
+    min-height: 40em;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -169,6 +177,29 @@ body, html {
 
 #project_wrap h1 {
     color: cornsilk;
+    text-shadow: 1px 1px black;
+}
+
+#skills h1 {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: cornsilk;
+    text-shadow: 1px 1px black;
+}
+
+table th {
+    background-color: black;
+    text-align: center;
+    color: cornsilk;
+    padding: 10px;
+    font-size: 20px;
+}
+
+table td {
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 8px;
+    color: cornsilk;
+    font-size: 14px;
 }
 
 #boredom_busters img {
@@ -179,7 +210,7 @@ body, html {
 }
 
 #boredom_busters:hover img {
-    border: 8px dotted rgb(54, 164, 207);
+    border: 6px dotted rgb(54, 164, 207);
 }
 
 #stadium_chasers img {
@@ -190,32 +221,32 @@ body, html {
 }
 
 #stadium_chasers:hover img {
-    border: 8px dotted rgb(54, 164, 207);
-}
-
-#project_wrap h2 {
-    padding-top: 20px;
+    border: 6px dotted rgb(54, 164, 207);
 }
 
 #connect_wrap {
     background-color: rgb(54, 164, 207);
     text-align: center;
+    min-height: 30em;
+}
+
+#connect_wrap h1 {
+    padding-top: 100px;
+    padding-bottom: 60px;
 }
 
 .connect_icons li {
     display: inline-block;
-    padding: 20px 40px 60px 40px;
+    padding: 20px 60px 60px 60px;
     vertical-align: middle;
 }
 
 .connect_icons a {
     text-decoration: none;
-    padding: 0 20px 0 20px;
 }
 
-#connect_wrap h1 {
-    margin-bottom: 20px;
-    padding-top: 65px;
+.connect_icons a:hover {
+    border-bottom: 3px dotted cornsilk;
 }
 
 #myBtn {
